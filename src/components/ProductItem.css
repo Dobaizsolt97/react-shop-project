@@ -1,4 +1,9 @@
 .product-item img {
-    max-width: 250px;
-    max-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  position: relative;
+}
+.product-item .toggle {
+  position: absolute;
+  top: 0px;
 }

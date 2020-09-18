@@ -4,7 +4,7 @@ import Logo from "../assets/images/logo.png";
 import { ReactComponent as ShoppingCart } from "../assets/icons/shopping-cart.svg";
 import "./Header.css";
 import { connect } from "react-redux";
-import { logoutUser } from "../redux/actions/user";
+import { logoutUser } from "../redux/user/UserActions";
 
 function Header(props) {
   return (
@@ -21,9 +21,14 @@ function Header(props) {
                 Delogare
               </p>
             ) : (
-              <Link to="/login" className="h5 mb-0">
-                Logare
-              </Link>
+              <div>
+                <Link to="/favorites" className="h5 mb-0 mx-1">
+                  Favorite
+                </Link>
+                <Link to="/login" className="h5 mb-0 mx-1">
+                  Logare
+                </Link>
+              </div>
             )}
             <div className="d-flex align-items-center">
               <Link to="/cart" className="d-flex">
