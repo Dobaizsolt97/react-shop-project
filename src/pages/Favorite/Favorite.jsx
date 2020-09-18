@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { connect } from "react-redux";
-import ProductList from "../components/ProductList";
+import ProductList from "../../components/ProductList/ProductList";
 
 function Favorite(props) {
   const { favorites } = props;
