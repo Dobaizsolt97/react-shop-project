@@ -1,4 +1,10 @@
 import {
+  START_LOADING,
+  UPDATE_USER_DATA,
+  UPDATE_USER_ERROR,
+} from "./UserConstants";
+
+import {
   signInWithGoogle,
   signOut,
   signInWithFacebook,
@@ -6,18 +12,18 @@ import {
 
 function startLoading() {
   return {
-    type: "START_LOADING",
+    type: START_LOADING,
   };
 }
 function updateUserData(payload) {
   return {
-    type: "UPDATE_USER_DATA",
+    type: UPDATE_USER_DATA,
     payload,
   };
 }
 function updateUserError(payload) {
   return {
-    type: "UPDATE_USER_ERROR",
+    type: UPDATE_USER_ERROR,
     payload,
   };
 }

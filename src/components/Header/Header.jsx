@@ -16,15 +16,15 @@ function Header(props) {
         <div>
           {props.user ? <p>Salut, {props.user.displayName}!</p> : null}
           <div className="d-flex justify-content-end">
+            <Link to="/favorites" className="h5 mb-0 mx-1">
+              Favorite
+            </Link>
             {props.user ? (
               <p className="logout h5" onClick={() => props.signOut()}>
                 Delogare
               </p>
             ) : (
               <div>
-                <Link to="/favorites" className="h5 mb-0 mx-1">
-                  Favorite
-                </Link>
                 <Link to="/login" className="h5 mb-0 mx-1">
                   Logare
                 </Link>

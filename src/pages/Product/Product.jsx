@@ -89,15 +89,16 @@ class Product extends React.Component {
                 Adaugă în coș
               </button>
               <p>
-                <span className="font-weight-bold">Mărime</span>: {product.size}
+                <span className="font-weight-bold">Rating</span>:{" "}
+                {product.rating}
               </p>
               <p>
                 <span className="font-weight-bold">Culoare</span>:{" "}
                 {product.colour}
               </p>
               <p>
-                <span className="font-weight-bold">Material</span>:{" "}
-                {product.material}
+                <span className="font-weight-bold">In stoc:</span>{" "}
+                {product.stoc}
               </p>
               <p>
                 <span className="font-weight-bold">Brand</span>: {product.brand}

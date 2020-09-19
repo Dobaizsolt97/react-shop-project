@@ -8,7 +8,7 @@ function Favorite(props) {
   console.log(favorites);
   return (
     <Layout>
-      <div className="container-fluid">
+      <div className="container">
         <h1>Favorite:</h1>
         <ProductList products={favorites} />
       </div>
